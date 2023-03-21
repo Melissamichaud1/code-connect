@@ -1,63 +1,77 @@
+@import "../../style.scss";
+
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  height: 50px;
-  // border-bottom: 1px solid lightgray;
-  border-top: 1.2px solid #fc9246;
-  border-bottom: 1.2px solid #fc9246;
-  background-color: #f6e2a3;
-  position: sticky;
-  top: 0;
-  .left {
+  @include themify($themes) {
     display: flex;
     align-items: center;
-    gap: 30px;
-    color: #3d6e3c;
-    span {
-      font-weight: bold;
-      font-size: 25px;
-      background: -webkit-linear-gradient(#3d6e3c, #fc9246);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .search {
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    border-top: 0.5px solid #fc9246;
+    border-bottom: 0.5px solid #fc9246;
+    // background-color: #f6e2a3;
+    background-color: themed("backgroundColor");
+    position: sticky;
+    top: 0;
+
+    .left {
       display: flex;
       align-items: center;
-      gap: 10px;
-      border: 1px solid lightgray;
-      border-radius: 5px;
-      padding: 5px;
-      color: #3d6e3c;
-      background-color: white;
+      gap: 30px;
+      // color: #3d6e3c;
+      color: themed(navLogos);
 
-      input {
-        border: none;
-        width: 500px;
-      }
-    }
-  }
-
-  .right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    color: #3d6e3c;
-
-    .user {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 500;
-
-      img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
       span {
+        font-weight: bold;
+        font-size: 25px;
+        background: -webkit-linear-gradient(#3d6e3c, #fc9246);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        // border: 1px solid lightgray;
+        border: 1px solid themed("border");
+        border-radius: 5px;
+        padding: 5px;
+        // color: #3d6e3c;
+        color: themed("searchIcon");
+        // background-color: white;
+        background-color: themed("searchBgColor");
+
+        input {
+          border: none;
+          width: 500px;
+          background-color: transparent;
+          color: themed("textColor");
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      // color: #3d6e3c;
+      color: themed("navLogos");
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        span {
+        }
       }
     }
   }
