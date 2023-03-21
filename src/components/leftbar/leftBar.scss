@@ -1,0 +1,31 @@
+.leftbar {
+  flex: 2;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  // overflow: scroll;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+  .container {
+    padding: 20px;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #3d6e3c;
+
+        span {
+          font-size: 14px;
+          color: black;
+        }
+      }
+    }
+  }
+}

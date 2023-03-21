@@ -4,10 +4,12 @@
   justify-content: space-between;
   padding: 10px 20px;
   height: 50px;
-  border-bottom: 1px solid lightgray;
+  // border-bottom: 1px solid lightgray;
+  border-top: 1.2px solid #fc9246;
+  border-bottom: 1.2px solid #fc9246;
   background-color: #f6e2a3;
-  //   position: sticky;
-  //   top: 0;
+  position: sticky;
+  top: 0;
   .left {
     display: flex;
     align-items: center;
@@ -16,7 +18,7 @@
     span {
       font-weight: bold;
       font-size: 25px;
-      background: -webkit-linear-gradient(#fc9246, #3d6e3c);
+      background: -webkit-linear-gradient(#3d6e3c, #fc9246);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

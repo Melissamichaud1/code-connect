@@ -7,12 +7,19 @@ const Register = () => {
       <div className="card">
         <div className="left">
           <h1>Code Connect.</h1>
+
           <p>
-            Connect with fellow coders and software engineers from around the
-            world on our social media app designed specifically for the tech
-            community. Share ideas, collaborate on projects, and stay up-to-date
-            on the latest industry trends. Join our community today and elevate
-            your coding game!
+            Discover a new kind of social networking designed exclusively for
+            web developers like you! Our platform provides a cutting-edge space
+            for you to connect, collaborate, and share your coding projects with
+            fellow coders and software engineers. Get inspired by innovative
+            ideas, participate in exciting events, and stay ahead of the curve
+            on the latest industry trends.
+          </p>
+          <p>
+            Don't wait any longer to elevate your coding game - join our
+            community today and experience the power of collaborative
+            creativity!
           </p>
           <span>Already have an account? Login below!</span>
           <Link to="/login">
