@@ -7,8 +7,10 @@
     justify-content: space-between;
     padding: 10px 20px;
     height: 50px;
-    border-top: 0.5px solid #fc9246;
-    border-bottom: 0.5px solid #fc9246;
+    // border-top: 0.5px solid #fc9246;
+    // border-bottom: 0.5px solid #fc9246;
+    border-top: 0.5px solid themed("borderNav");
+    border-bottom: 0.5px solid themed("borderNav");
     // background-color: #f6e2a3;
     background-color: themed("backgroundColor");
     position: sticky;
