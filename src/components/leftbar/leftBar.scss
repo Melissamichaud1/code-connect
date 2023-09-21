@@ -6,10 +6,15 @@
     top: 70px;
     height: calc(100vh - 70px);
     background-color: themed("backgroundColorLeft");
-    // overflow: scroll;
-    // &::-webkit-scrollbar {
-    //   display: none;
-    // }
+
+    @include mobile {
+      display: none;
+    }
+
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .container {
       padding: 20px;
 

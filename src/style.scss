@@ -6,6 +6,8 @@ $themes: (
     backgroundColorRight: #f6f3f3,
     backgroundCardRight: white,
     backgroundColorHome: #f6f3f3,
+    backgroundColorProfile: #f6f3f3,
+    backgroundCardProfile: white,
     navLogos: #3d6e3c,
     searchIcon: #3d6e3c,
     searchBgColor: white,
@@ -14,6 +16,8 @@ $themes: (
     leftLogoColor: #3d6e3c,
     rightShadow: rgba(0, 0, 0, 0.09),
     textRight: black,
+    textColorProfile: #3d6e3c,
+    textColorProfile2: black,
   ),
   dark: (
     textColor2: whitesmoke,
@@ -22,6 +26,8 @@ $themes: (
     backgroundColorRight: rgb(67, 67, 67),
     backgroundCardRight: #222,
     backgroundColorHome: rgb(67, 67, 67),
+    backgroundColorProfile: rgb(67, 67, 67),
+    backgroundCardProfile: #222,
     navLogos: #abaaa9,
     searchIcon: #abaaa9,
     seachBgColor: #333,
@@ -32,6 +38,8 @@ $themes: (
     leftLogoColor: #abaaa9,
     rightShadow: #abaaa9,
     textRight: rgb(197, 196, 196),
+    textColorProfile: rgb(194, 193, 193),
+    textColorProfile2: rgb(194, 193, 193),
   ),
 );
 
@@ -58,13 +66,13 @@ $themes: (
   @return map-get($theme-map, $key);
 }
 
-// @mixin mobile {
-//   @media (max-width: 480px) {
-//     @content;
-//   }
-// }
-// @mixin tablet {
-//   @media (max-width: 960px) {
-//     @content;
-//   }
-// }
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
