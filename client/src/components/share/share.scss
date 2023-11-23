@@ -37,7 +37,7 @@
         margin: 20px 0px;
         border: none;
         height: 0.5px;
-        background-color: themed("border");
+        background-color: gray;
       }
 
       .bottom {
@@ -57,6 +57,7 @@
 
             img {
               height: 20px;
+              background-color: themed("shareIconColor");
             }
 
             span {
