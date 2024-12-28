@@ -4,6 +4,7 @@ import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Link } from "react-router-dom";
 import Comments from "../comments/Comments";
 import { useState } from "react";
@@ -64,7 +65,16 @@ const Post = ({ post }) => {
       <div className="container">
         <div className="user">
           <div className="userInfo">
-            <img src={"/upload/" + post.profilePic} alt="" />
+            <Link
+              to={`/profile/${post.userId}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <img
+                src={`/upload/${post.profilePic}`}
+                alt="Profile"
+                className="profile-img"
+              />
+            </Link>
             <div className="details">
               <Link
                 to={`/profile/${post.userId}`}

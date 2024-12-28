@@ -9,27 +9,27 @@ const Rightbar = () => {
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://emojis.wiki/thumbs/emojis/woman-technologist.webp"
+                src="https://aaah0mnbncqtinas.public.blob.vercel-storage.com/1uLx3BWbXu-no-background-ReYIOPadsVWeNHU5D7o7npSsfGUQlD.png"
                 alt=""
               />
               <span>Jane Doe</span>
             </div>
             <div className="buttons">
-              <button>request</button>
-              <button>dismiss</button>
+              <button>Request</button>
+              <button>Dismiss</button>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://emojis.wiki/thumbs/emojis/man-technologist.webp"
+                src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/man-light-skin-tone.png"
                 alt=""
               />
-              <span>John Doe</span>
+              <span>Jack Doe</span>
             </div>
             <div className="buttons">
-              <button>request</button>
-              <button>dismiss</button>
+              <button>Request</button>
+              <button>Dismiss</button>
             </div>
           </div>
         </div>
@@ -50,38 +50,38 @@ const Rightbar = () => {
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://emojis.wiki/thumbs/emojis/man-technologist.webp"
+                src="https://www.aljazeera.com/wp-content/uploads/2017/07/d2e28e44190b40978c263abb592463e5_18.jpeg?resize=770%2C513&quality=80"
                 alt=""
               />
               <p>
-                <span>John Doe</span> added a new project.
+                <span>Julie Doe</span> organized a new Hackathon.
               </p>
             </div>
-            <span>1 minute ago</span>
+            <span>3 minutes ago</span>
           </div>
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://emojis.wiki/thumbs/emojis/man-technologist.webp"
+                src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/woman-red-haired-light-skin-tone.png"
                 alt=""
               />
               <p>
-                <span>John Doe</span> added a new project.
+                <span>Jennifer Doe</span> published a code snippit.
               </p>
             </div>
-            <span>1 minute ago</span>
+            <span>5 minutes ago</span>
           </div>
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://emojis.wiki/thumbs/emojis/man-technologist.webp"
+                src="https://play-lh.googleusercontent.com/OGePWW0cvKfhIPz4C7RvpXOb5YpFBOkX5-H4u6Rn8A0b2rNWoSM-xdEgKpeB8P17RA_5"
                 alt=""
               />
               <p>
-                <span>John Doe</span> added a new project.
+                <span>Julius Doe</span> invited you to a code jam event.
               </p>
             </div>
-            <span>1 minute ago</span>
+            <span>10 minutes ago</span>
           </div>
         </div>
         <div className="item">
@@ -89,21 +89,21 @@ const Rightbar = () => {
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://emojis.wiki/thumbs/emojis/woman-technologist.webp"
+                src="https://play-lh.googleusercontent.com/OGePWW0cvKfhIPz4C7RvpXOb5YpFBOkX5-H4u6Rn8A0b2rNWoSM-xdEgKpeB8P17RA_5"
                 alt=""
               />
               <div className="online" />
-              <span>Jane Doe</span>
+              <span>Julius Doe</span>
             </div>
           </div>
           <div className="user">
             <div className="userInfo">
               <img
-                src="https://emojis.wiki/thumbs/emojis/woman-technologist.webp"
+                src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/man-light-skin-tone.png"
                 alt=""
               />
               <div className="online" />
-              <span>Aria Azam</span>
+              <span>Jack Doe</span>
             </div>
           </div>
         </div>

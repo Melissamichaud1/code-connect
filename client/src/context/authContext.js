@@ -1,5 +1,5 @@
+import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import { createContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
 
@@ -28,12 +28,23 @@ export const AuthContextProvider = ({ children }) => {
     setCurrentUser(res.data);
   };
 
+  const logout = async () => {
+    try {
+      await axios.get("http://localhost:8800/api/auth/logout", {
+        withCredentials: true,
+      });
+      setCurrentUser(null);
+    } catch (error) {
+      console.error("Error logging out", error);
+    }
+  };
+
   useEffect(() => {
     localStorage.setItem("user", JSON.stringify(currentUser));
   }, [currentUser]);
 
   return (
-    <AuthContext.Provider value={{ currentUser, login }}>
+    <AuthContext.Provider value={{ currentUser, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
